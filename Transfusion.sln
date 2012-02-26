@@ -1,11 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CBCFC90D-FAE2-428F-8712-0E067714DA0A}"
-	ProjectSection(SolutionItems) = preProject
-		Info.cpp = Info.cpp
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tfnFramework", "Framework\Framework.vcxproj", "{BD2443A5-4883-43D1-81BE-572E1A0D681C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tfnCommon", "Common\Common.vcxproj", "{E12D944A-D35C-45DA-AE4C-75A20F152FAE}"
