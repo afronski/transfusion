@@ -1,0 +1,36 @@
+void main(	in float3 position : POSITION,
+			in float3 normal   : NORMAL,					
+						
+			out float4 HPosition : POSITION,
+			out float4 TexCoord0 : TEXCOORD0,
+				
+			uniform float4x4 WorldViewProj,
+			uniform float3x3 WorldIT,
+			uniform float3x4 World,
+			
+			uniform float3 LightVec,
+			uniform float3 EyePos)
+{
+	float3 worldNormal = normalize(mul(WorldIT, normal));
+
+    // Build position.
+  	float4 tempPos;
+    tempPos.xyz = position.xyz;
+    tempPos.w   = 1.0;
+
+	// Compute worldspace position.
+	float3 worldSpacePos = mul(World, tempPos);
+	
+	// Vector from vertex to eye, normalized.
+	float3 vertToEye = normalize(EyePos - worldSpacePos);
+
+	// h = normalize(l + e)
+	float3 halfAngle = normalize(vertToEye + LightVec);
+
+	TexCoord0.x = max(dot(LightVec, worldNormal), 0.0);
+	TexCoord0.y = max(dot(halfAngle, worldNormal), 0.0);
+	
+    // Transform into homogeneous-clip space.
+	HPosition = mul(WorldViewProj, tempPos);
+}
+

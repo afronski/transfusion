@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>tfnFramework</ProjectName>
+    <ProjectGuid>{BD2443A5-4883-43D1-81BE-572E1A0D681C}</ProjectGuid>
+    <RootNamespace>Framework</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;TFNFRAMEWORK_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pchFramework.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>D:\Projects\Transfusion\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../Debug/tfnCommon_d.lib;freeimage.lib;freetype.lib;OpenGL32.lib;GLu32.lib;Glew32.lib;Cg.lib;CgGL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_d.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\Projects\Transfusion\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;TFNFRAMEWORK_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pchFramework.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>D:\Projects\Transfusion\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../Release/tfnCommon.lib;freeimage.lib;freetype.lib;OpenGL32.lib;GLu32.lib;Glew32.lib;Cg.lib;CgGL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>D:\Projects\Transfusion\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CgContext.cpp" />
+    <ClCompile Include="CgProgram.cpp" />
+    <ClCompile Include="CgProgramManager.cpp" />
+    <ClCompile Include="FontManager.cpp" />
+    <ClCompile Include="HardwareArrayManager.cpp" />
+    <ClCompile Include="HardwareIndexArray.cpp" />
+    <ClCompile Include="HardwareVertexArray.cpp" />
+    <ClCompile Include="ILoader.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="pchFramework.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pchFramework.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PredefBox.cpp" />
+    <ClCompile Include="PredefPlane.cpp" />
+    <ClCompile Include="PredefSphere.cpp" />
+    <ClCompile Include="PredefTorus.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RendererContext.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WindowClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CgContext.hpp" />
+    <ClInclude Include="CgProgram.hpp" />
+    <ClInclude Include="CgProgramManager.hpp" />
+    <ClInclude Include="FontManager.hpp" />
+    <ClInclude Include="HardwareArrayManager.hpp" />
+    <ClInclude Include="HardwareIndexArray.hpp" />
+    <ClInclude Include="HardwareVertexArray.hpp" />
+    <ClInclude Include="ILoader.hpp" />
+    <ClInclude Include="Mesh.hpp" />
+    <ClInclude Include="pchFramework.hpp" />
+    <ClInclude Include="PredefBox.hpp" />
+    <ClInclude Include="PredefPlane.hpp" />
+    <ClInclude Include="PredefSphere.hpp" />
+    <ClInclude Include="PredefTorus.hpp" />
+    <ClInclude Include="Renderer.hpp" />
+    <ClInclude Include="RendererContext.hpp" />
+    <ClInclude Include="RendererWrapper.hpp" />
+    <ClInclude Include="Texture.hpp" />
+    <ClInclude Include="Window.hpp" />
+    <ClInclude Include="WindowClass.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{e12d944a-d35c-45da-ae4c-75a20f152fae}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\libs\cg.lib" />
+    <Library Include="..\libs\cgD3D10.lib" />
+    <Library Include="..\libs\cgD3D11.lib" />
+    <Library Include="..\libs\cgD3D8.lib" />
+    <Library Include="..\libs\cgD3D9.lib" />
+    <Library Include="..\libs\cgGL.lib" />
+    <Library Include="..\libs\FreeImage.lib" />
+    <Library Include="..\libs\freetype.lib" />
+    <Library Include="..\libs\glew32.lib" />
+    <Library Include="..\libs\glew32s.lib" />
+    <Library Include="..\libs\glut32.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

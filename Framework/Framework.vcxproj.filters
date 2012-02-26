@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CgContext.cpp" />
+    <ClCompile Include="CgProgram.cpp" />
+    <ClCompile Include="CgProgramManager.cpp" />
+    <ClCompile Include="FontManager.cpp" />
+    <ClCompile Include="HardwareArrayManager.cpp" />
+    <ClCompile Include="HardwareIndexArray.cpp" />
+    <ClCompile Include="HardwareVertexArray.cpp" />
+    <ClCompile Include="ILoader.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="pchFramework.cpp" />
+    <ClCompile Include="PredefBox.cpp" />
+    <ClCompile Include="PredefPlane.cpp" />
+    <ClCompile Include="PredefSphere.cpp" />
+    <ClCompile Include="PredefTorus.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RendererContext.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WindowClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CgContext.hpp" />
+    <ClInclude Include="CgProgram.hpp" />
+    <ClInclude Include="CgProgramManager.hpp" />
+    <ClInclude Include="FontManager.hpp" />
+    <ClInclude Include="HardwareArrayManager.hpp" />
+    <ClInclude Include="HardwareIndexArray.hpp" />
+    <ClInclude Include="HardwareVertexArray.hpp" />
+    <ClInclude Include="ILoader.hpp" />
+    <ClInclude Include="Mesh.hpp" />
+    <ClInclude Include="pchFramework.hpp" />
+    <ClInclude Include="PredefBox.hpp" />
+    <ClInclude Include="PredefPlane.hpp" />
+    <ClInclude Include="PredefSphere.hpp" />
+    <ClInclude Include="PredefTorus.hpp" />
+    <ClInclude Include="Renderer.hpp" />
+    <ClInclude Include="RendererContext.hpp" />
+    <ClInclude Include="RendererWrapper.hpp" />
+    <ClInclude Include="Texture.hpp" />
+    <ClInclude Include="Window.hpp" />
+    <ClInclude Include="WindowClass.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{7360c1d5-e947-48b5-a38f-47dc2df20ca8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\libs\cg.lib">
+      <Filter>lib</Filter>
+    </Library>
+    <Library Include="..\libs\cgD3D8.lib">
+      <Filter>lib</Filter>
+    </Library>
+    <Library Include="..\libs\cgD3D9.lib">
+      <Filter>lib</Filter>
+    </Library>
+    <Library Include="..\libs\cgD3D10.lib">
+      <Filter>lib</Filter>
+    </Library>
+    <Library Include="..\libs\cgD3D11.lib">
+      <Filter>lib</Filter>
+    </Library>
+    <Library Include="..\libs\cgGL.lib">
+      <Filter>lib</Filter>
+    </Library>
+    <Library Include="..\libs\FreeImage.lib">
+      <Filter>lib</Filter>
+    </Library>
+    <Library Include="..\libs\freetype.lib">
+      <Filter>lib</Filter>
+    </Library>
+    <Library Include="..\libs\glew32.lib">
+      <Filter>lib</Filter>
+    </Library>
+    <Library Include="..\libs\glew32s.lib">
+      <Filter>lib</Filter>
+    </Library>
+    <Library Include="..\libs\glut32.lib">
+      <Filter>lib</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

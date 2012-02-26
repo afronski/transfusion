@@ -1,0 +1,6 @@
+// A standard formula for blending stages of anisotropic lighting (source: NVIDIA DX9 sample)
+void main(in float4 tex : TEXCOORD0, out float3 colorO : COLOR0, uniform sampler2D tex0)
+{
+	float4 texel = tex2D(tex0, tex.xy);
+	colorO = (texel.rgb * texel.aaa) * 4.0;
+}

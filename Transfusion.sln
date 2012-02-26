@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CBCFC90D-FAE2-428F-8712-0E067714DA0A}"
+	ProjectSection(SolutionItems) = preProject
+		Info.cpp = Info.cpp
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tfnFramework", "Framework\Framework.vcxproj", "{BD2443A5-4883-43D1-81BE-572E1A0D681C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tfnCommon", "Common\Common.vcxproj", "{E12D944A-D35C-45DA-AE4C-75A20F152FAE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FontAndPredefTest", "FontAndPredefTest\FontAndPredefTest.vcxproj", "{192AAB16-47BA-4B71-8DC9-BB9AF0E426F7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CgAndVBOTest", "CgAndVBOTest\CgAndVBOTest.vcxproj", "{853B8170-F5CB-47C2-97C0-2BF9213E438E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AnisotropicLighting", "AnisotropicLighting\AnisotropicLighting.vcxproj", "{EA5C18A1-F81D-49B4-AACB-65D6B69C71AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD2443A5-4883-43D1-81BE-572E1A0D681C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BD2443A5-4883-43D1-81BE-572E1A0D681C}.Debug|Win32.Build.0 = Debug|Win32
+		{BD2443A5-4883-43D1-81BE-572E1A0D681C}.Release|Win32.ActiveCfg = Release|Win32
+		{BD2443A5-4883-43D1-81BE-572E1A0D681C}.Release|Win32.Build.0 = Release|Win32
+		{E12D944A-D35C-45DA-AE4C-75A20F152FAE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E12D944A-D35C-45DA-AE4C-75A20F152FAE}.Debug|Win32.Build.0 = Debug|Win32
+		{E12D944A-D35C-45DA-AE4C-75A20F152FAE}.Release|Win32.ActiveCfg = Release|Win32
+		{E12D944A-D35C-45DA-AE4C-75A20F152FAE}.Release|Win32.Build.0 = Release|Win32
+		{192AAB16-47BA-4B71-8DC9-BB9AF0E426F7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{192AAB16-47BA-4B71-8DC9-BB9AF0E426F7}.Debug|Win32.Build.0 = Debug|Win32
+		{192AAB16-47BA-4B71-8DC9-BB9AF0E426F7}.Release|Win32.ActiveCfg = Release|Win32
+		{192AAB16-47BA-4B71-8DC9-BB9AF0E426F7}.Release|Win32.Build.0 = Release|Win32
+		{853B8170-F5CB-47C2-97C0-2BF9213E438E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{853B8170-F5CB-47C2-97C0-2BF9213E438E}.Debug|Win32.Build.0 = Debug|Win32
+		{853B8170-F5CB-47C2-97C0-2BF9213E438E}.Release|Win32.ActiveCfg = Release|Win32
+		{853B8170-F5CB-47C2-97C0-2BF9213E438E}.Release|Win32.Build.0 = Release|Win32
+		{EA5C18A1-F81D-49B4-AACB-65D6B69C71AD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA5C18A1-F81D-49B4-AACB-65D6B69C71AD}.Debug|Win32.Build.0 = Debug|Win32
+		{EA5C18A1-F81D-49B4-AACB-65D6B69C71AD}.Release|Win32.ActiveCfg = Release|Win32
+		{EA5C18A1-F81D-49B4-AACB-65D6B69C71AD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
