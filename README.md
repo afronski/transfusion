@@ -13,8 +13,8 @@ Technologies and languages used in project:
 
 Screenshots:
 
-![Anisotropic Lighting](afronski.github.com/transfusion/Screenshots/Anisotropic Lighting.png)
-![Cg Solid](afronski.github.com/transfusion/Screenshots/Cg Solid.png)
-![Cg Wireframe](afronski.github.com/transfusion/Screenshots/Cg Wireframe.png)
-![Stanford's Bunny](afronski.github.com/transfusion/Screenshots/Stanford's Bunny.jpg)
-![TTF Fonts](afronski.github.com/transfusion/Screenshots/TTF Fonts.jpg)
+![Anisotropic Lighting](https://raw.github.com/afronski/transfusion/master/Screenshots/Anisotropic Lighting.png)
+![Cg Solid](https://raw.github.com/afronski/transfusion/master/Screenshots/Cg Solid.png)
+![Cg Wireframe](https://raw.github.com/afronski/transfusion/master/Screenshots/Cg Wireframe.png)
+![Stanford's Bunny](https://raw.github.com/afronski/transfusion/master/Screenshots/Stanford's Bunny.jpg)
+![TTF Fonts](https://raw.github.com/afronski/transfusion/master/Screenshots/TTF Fonts.jpg)
