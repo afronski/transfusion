@@ -10,6 +10,7 @@ Technologies and languages used in project:
 - Cg
 - FreeImage
 - OpenGL, glew, glut
+- doxygen
 
 Screenshots:
 
