@@ -1,6 +1,6 @@
 # transfusion #
 
-![Logo](afronski.github.com/transfusion/doc/img/Icon.png)
+![Logo](https://raw.github.com/afronski/transfusion/master/Doc/img/Icon.png)
 
 Really small graphics engine written in 2009. Not maintained.
 
